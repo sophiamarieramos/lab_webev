@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #FFF0F5; 
+        color: #333;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    header {
+        background-color: #FFB6C1;
+        text-align: center;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 50px;
+        color: #FF69B4; 
+    }
+
+    nav {
+        background-color: #FF69B4; 
+        padding: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 5px 15px;
+        border-radius: 5px;
+        background-color: #FF1493; 
+        transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        background-color: #FF66B2; 
+    }
+
+    .main-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        margin: 20px; 
+        flex-wrap: wrap;
+    }
+
+    aside {
+        background-color: #FFF0F5; 
+        width: 20%;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    aside h2 {
+        font-size: 20px;
+        color: #FF69B4;
+    }
+
+    aside ul {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+
+    aside ul li {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .article-container {
+        width: 50%; 
+        padding: 30px;
+        background-color: #FFFAF0; 
+        border-radius: 15px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        
+    }
+
+    .article-container h2 {
+        font-size: 30px;
+        color: #FF1493;
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .article-container ul li {
+        list-style-type: disc;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: 'sans-serif';
+    }
+
+    .article-container p {
+        font-weight: bold;
+        font-size: 20px;
+        color: #FF69B4; 
+    }
+
+    .section-container {
+        width: 20%;
+        padding: 20px;
+        background-color: #FF66B2; 
+        border-radius: 15px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 80px 0;
+        
+    }
+
+    .section-container h3 {
+        font-size: 25px;
+        color: white;
+        margin-bottom: 15px;
+    }
+
+    .section-container p {
+        font-size: 15px;
+        color: white;
+    }
+
+    footer {
+        background-color: #FFB6C1;
+        text-align: center;
+        padding: 10px;
+        color: #333;
+        margin-top: 370px;
+        font-style: bold;
+        font-family: 'sans-serif';
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
+    @media (max-width: 768px) {
+        .main-content {
+            flex-direction: column;
+        }
+
+        aside, .article-container, .section-container {
+            width:100%;
+            margin-bottom: 20px;
+        }
+       
+
+        nav ul {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 10px 0;
+        }
+    }
+</style>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Hello Welcome!</h1>
+        </header> 
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <aside>
+                <h2>Related Links:</h2>
+                <ul>
+                    <li><a href="#link1">Link 1</a></li>
+                    <li><a href="#link2">Link 2</a></li>
+                    <li><a href="#link3">Link 3</a></li>
+                </ul>
+            </aside>
+
+            <div class="article-container">
+                <h2>Latest News</h2>
+                <p>This is the latest news article</p>
+                <ul>
+                    <li>National Budget: President Ferdinand Marcos Jr. signed the P6.326-trillion budget for 2025, making last-minute cuts to the original proposal.</li> 
+                    <li>Economic Position: The Philippines is entering 2025 in a stronger economic position, according to the country’s economic managers.</li>
+                    <li>Human Rights Budget: The national human rights institution is seeking a budget of P1.109 billion for 2025, which is a significant topic in the ongoing budget discussions.</li>
+                </ul>
+            </div>
+    
+
+        <div class="section-container">
+            <h3>About Us</h3>
+            <p>This is the about section of our website.</p>
+        </div>
+    </div>
+
+        <footer>
+            <p>&copy; 2025 Flexbox Website  </p>
+        </footer>  
+    </div>
+</body>
+</html>
